@@ -16,12 +16,13 @@
 		797A5C011AA0FA1D002EAFF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797A5BFF1AA0FA1D002EAFF8 /* LaunchScreen.xib */; };
 		797A5C0D1AA0FA1D002EAFF8 /* Browser2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A5C0C1AA0FA1D002EAFF8 /* Browser2Tests.m */; };
 		797A5C231AA11BDD002EAFF8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 797A5C221AA11BDD002EAFF8 /* Settings.bundle */; };
-		79C8EF151BF99666007D2A22 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797A5C161AA1091B002EAFF8 /* Firebase.framework */; };
+		7980135A5A05605C385C62B3 /* libPods-MMDLClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4745EC00F05836F1F42F94 /* libPods-MMDLClient.a */; };
 		79C8EF181BF996AB007D2A22 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797A5C1C1AA1093F002EAFF8 /* CFNetwork.framework */; };
 		79C8EF191BF996B5007D2A22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797A5C1E1AA10947002EAFF8 /* Security.framework */; };
 		79C8EF1A1BF996BD007D2A22 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797A5C201AA10950002EAFF8 /* SystemConfiguration.framework */; };
 		79C8EF1B1BF996E9007D2A22 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C8EF161BF99675007D2A22 /* libicucore.tbd */; };
 		79C8EF1D1BF996F3007D2A22 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C8EF1C1BF996F3007D2A22 /* libc++.tbd */; };
+		B169E4A41E42184100870610 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B169E4A31E42184100870610 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,13 +50,16 @@
 		797A5C061AA0FA1D002EAFF8 /* MMDLClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMDLClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		797A5C0B1AA0FA1D002EAFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797A5C0C1AA0FA1D002EAFF8 /* Browser2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Browser2Tests.m; sourceTree = "<group>"; };
-		797A5C161AA1091B002EAFF8 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		797A5C1C1AA1093F002EAFF8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		797A5C1E1AA10947002EAFF8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		797A5C201AA10950002EAFF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		797A5C221AA11BDD002EAFF8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		79C8EF161BF99675007D2A22 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		79C8EF1C1BF996F3007D2A22 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		951FD90A9ED825E727166C03 /* Pods-MMDLClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDLClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMDLClient/Pods-MMDLClient.release.xcconfig"; sourceTree = "<group>"; };
+		9F4745EC00F05836F1F42F94 /* libPods-MMDLClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMDLClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B169E4A31E42184100870610 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1C5C8DCB787A5A947299B00 /* Pods-MMDLClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDLClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMDLClient/Pods-MMDLClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +72,8 @@
 				79C8EF1A1BF996BD007D2A22 /* SystemConfiguration.framework in Frameworks */,
 				79C8EF191BF996B5007D2A22 /* Security.framework in Frameworks */,
 				79C8EF181BF996AB007D2A22 /* CFNetwork.framework in Frameworks */,
-				79C8EF151BF99666007D2A22 /* Firebase.framework in Frameworks */,
 				792BC3461AD85BBC0052E298 /* WebKit.framework in Frameworks */,
+				7980135A5A05605C385C62B3 /* libPods-MMDLClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		797A5BE41AA0FA1D002EAFF8 = {
+		13BE9D2B12CF7CE2DB0E2552 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1C5C8DCB787A5A947299B00 /* Pods-MMDLClient.debug.xcconfig */,
+				951FD90A9ED825E727166C03 /* Pods-MMDLClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E57DDC55985839A9C4E8032 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				79C8EF1C1BF996F3007D2A22 /* libc++.tbd */,
@@ -93,10 +106,19 @@
 				797A5C201AA10950002EAFF8 /* SystemConfiguration.framework */,
 				797A5C1E1AA10947002EAFF8 /* Security.framework */,
 				797A5C1C1AA1093F002EAFF8 /* CFNetwork.framework */,
-				797A5C161AA1091B002EAFF8 /* Firebase.framework */,
+				9F4745EC00F05836F1F42F94 /* libPods-MMDLClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		797A5BE41AA0FA1D002EAFF8 = {
+			isa = PBXGroup;
+			children = (
 				797A5BEF1AA0FA1D002EAFF8 /* MMDLClient */,
 				797A5C091AA0FA1D002EAFF8 /* Browser2Tests */,
 				797A5BEE1AA0FA1D002EAFF8 /* Products */,
+				13BE9D2B12CF7CE2DB0E2552 /* Pods */,
+				1E57DDC55985839A9C4E8032 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +150,7 @@
 		797A5BF01AA0FA1D002EAFF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B169E4A31E42184100870610 /* GoogleService-Info.plist */,
 				797A5BF11AA0FA1D002EAFF8 /* Info.plist */,
 				797A5BF21AA0FA1D002EAFF8 /* main.m */,
 			);
@@ -158,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 797A5C101AA0FA1D002EAFF8 /* Build configuration list for PBXNativeTarget "MMDLClient" */;
 			buildPhases = (
+				5356524837FC340606371DCC /* [CP] Check Pods Manifest.lock */,
 				797A5BE91AA0FA1D002EAFF8 /* Sources */,
 				797A5BEA1AA0FA1D002EAFF8 /* Frameworks */,
 				797A5BEB1AA0FA1D002EAFF8 /* Resources */,
+				CBCA6E82E98FE1A3194ADF00 /* [CP] Embed Pods Frameworks */,
+				4F7FB7D303D5B02DCA8605A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,7 +226,8 @@
 				TargetAttributes = {
 					797A5BEC1AA0FA1D002EAFF8 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 9BZX8TASHC;
+						DevelopmentTeam = YQ62CYT4B3;
+						ProvisioningStyle = Manual;
 					};
 					797A5C051AA0FA1D002EAFF8 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -235,6 +262,7 @@
 			files = (
 				797A5C231AA11BDD002EAFF8 /* Settings.bundle in Resources */,
 				797A5BFC1AA0FA1D002EAFF8 /* Main.storyboard in Resources */,
+				B169E4A41E42184100870610 /* GoogleService-Info.plist in Resources */,
 				797A5C011AA0FA1D002EAFF8 /* LaunchScreen.xib in Resources */,
 				797A5BFE1AA0FA1D002EAFF8 /* Images.xcassets in Resources */,
 			);
@@ -248,6 +276,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F7FB7D303D5B02DCA8605A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMDLClient/Pods-MMDLClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5356524837FC340606371DCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBCA6E82E98FE1A3194ADF00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMDLClient/Pods-MMDLClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		797A5BE91AA0FA1D002EAFF8 /* Sources */ = {
@@ -379,11 +455,13 @@
 		};
 		797A5C111AA0FA1D002EAFF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C5C8DCB787A5A947299B00 /* Pods-MMDLClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YQ62CYT4B3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -391,20 +469,23 @@
 				INFOPLIST_FILE = Browser2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.google.sample.devicelab.$(PRODUCT_NAME:rfc1034identifier)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.move4mobile.mobiledevicelab;
 				PRODUCT_NAME = MMDLClient;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "63220b17-490f-4f8f-9169-6e5c2875a45e";
+				PROVISIONING_PROFILE_SPECIFIER = "M4M iOS Development Profile 20161011";
 			};
 			name = Debug;
 		};
 		797A5C121AA0FA1D002EAFF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 951FD90A9ED825E727166C03 /* Pods-MMDLClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YQ62CYT4B3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -412,10 +493,11 @@
 				INFOPLIST_FILE = Browser2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.google.sample.devicelab.$(PRODUCT_NAME:rfc1034identifier)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.move4mobile.mobiledevicelab;
 				PRODUCT_NAME = MMDLClient;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e13ecc9d-f72f-4aaf-a5e0-633e00fef288";
+				PROVISIONING_PROFILE_SPECIFIER = "M4M iOS Distribution Enterprise Profile";
 			};
 			name = Release;
 		};

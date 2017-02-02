@@ -33,6 +33,7 @@
     // Override point for customization after application launch.
     // Register the preference defaults early.
     NSLog(@"didFinishLaunchingWithOptions");
+    [FIRApp configure];
     return YES;
 }
 

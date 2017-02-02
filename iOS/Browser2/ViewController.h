@@ -20,13 +20,13 @@
  **/
 
 #import <UIKit/UIKit.h>
-#import <Firebase/Firebase.h>
 #import <WebKit/WebKit.h>
+@import Firebase;
 
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) WKWebView *wkWebView;
-@property (nonatomic, strong) Firebase *myRootRef;
+@property (nonatomic) FIRDatabaseReference *myRootRef;
 
 - (void)initFirebase;
 - (void)connectFirebase;

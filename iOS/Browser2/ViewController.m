@@ -20,7 +20,7 @@
  **/
 
 #import "ViewController.h"
-#import <Firebase/Firebase.h>
+@import Firebase;
 
 static const CGFloat kLabelHeight = 14.0f;
 static const CGFloat kMargin = 10.0f;
@@ -63,23 +63,16 @@ static const CGFloat kAddressHeight = 22.0f;
 
 - (void)initFirebase {
     NSLog(@"initFirebase");
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *fbAppName = [defaults stringForKey:@"fbAppName"];
-    if (!fbAppName) {
-        fbAppName = [NSString stringWithFormat:@"goog-mtv-device-lab"];
-    }
-
-    NSString *fbURL = [NSString stringWithFormat:@"https://%@.firebaseio.com/url", fbAppName];
-    NSLog(@"%@", fbURL.uppercaseString);
-
-    self.myRootRef = [[Firebase alloc] initWithUrl:fbURL];
-    [self.myRootRef authAnonymouslyWithCompletionBlock:^(NSError *error, FAuthData *authData) {
+    
+    self.myRootRef = [[FIRDatabase database] reference];
+    [[FIRAuth auth] signInAnonymouslyWithCompletion:^(FIRUser *_Nullable user,
+                                                      NSError *_Nullable error) {
         if (error) {
             [self informError:error];
         } else {
             NSLog(@"Firebase authentication completed.");
             
-            [self.myRootRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+            [[self.myRootRef child:@"url"] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot *snapshot) {
                 @try {
                     self.strURL = snapshot.value;
                     NSLog(@"** New URL: %@", self.strURL);
@@ -88,6 +81,7 @@ static const CGFloat kAddressHeight = 22.0f;
                 @catch (NSException *ex) {
                     NSLog(@"%@", ex.reason);
                 }
+
             }];
         }
     }];
