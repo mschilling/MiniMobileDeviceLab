@@ -183,8 +183,11 @@ static const CGFloat kAddressHeight = 22.0f;
     [_wkWebView loadHTMLString:readyBody baseURL:nil];
     _wkWebView.navigationDelegate = self;
     [self.view addSubview:_wkWebView];
-    NSString *myUA = @"Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13E238 Safari/601.1";
-    _wkWebView.customUserAgent = myUA;
+    
+    if ([_wkWebView respondsToSelector:@selector(setCustomUserAgent:)]) {
+        NSString *myUA = @"Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13E238 Safari/601.1";
+        _wkWebView.customUserAgent = myUA;
+    }
     
     @try {
         [self initFirebase];
